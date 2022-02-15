@@ -25,6 +25,9 @@ img {
   max-width: 100%;
   display: block;
 }
+h2 {
+  font-weight: bold;
+}
 
 /* BODY */
 
@@ -658,8 +661,13 @@ h2:nth-child(5) {
 }
 
 /* LIEN VERS GITHUB */
-h2:nth-child(6) {
+/* h2:nth-child(6) {
+
+} */
+.link_github {
   text-align: center;
+  margin-top: 80px;
+
 }
 
 /* CONTACT SECTION */
