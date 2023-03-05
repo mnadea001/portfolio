@@ -17,13 +17,16 @@
 
   <link rel="stylesheet" href="style.css" />
 
+  <!-- gliter carousel -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png" />
 
   <!-- Animate CSS CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <title>Mathilde NADEAU | Développeuse web</title>
 </head>
 
@@ -35,6 +38,7 @@
     <ul class="navigation">
       <li><a href="#about" class="nav-link">A propos</a></li>
       <li><a href="#skills" class="nav-link">Compétences</a></li>
+      <li><a href="#works" class="nav-link">Expériences</a></li>
       <li><a href="#projects" class="nav-link">Projets</a></li>
       <li><a href="#Contact" class="nav-link">Contact</a></li>
     </ul>
@@ -59,11 +63,11 @@
       <div class="bio">
         <h2 class="bio-title">A propos de moi</h2> <br>
         <p class="bio-text">
-          Actuellement développeuse web full stack</br>
-        <p>au sein de l'agence de communication The KUB,</br>
+          Actuellement développeuse Symfony full stack</br>
+        <p>au sein de la start-up Elemate,</br>
         <p> <strong>je recherche une alternance pour l'an prochain.</strong>
 
-        <p> J'intègre l'école EPSI en Bachelor Informatique.
+        <p> J'intègre l'école Ynov en Master Expert en développement web.
         </p>
 
       </div>
@@ -75,6 +79,96 @@
     </div>
   </section>
 
+
+
+
+  <section class="works bg-dark" id="works">
+    <h2 class="text-white text-center my-5">Experiences professionnelles</h2>
+<div class="row ">
+<div class="col-6">
+  <div class="card m-5 p-5">
+    <div class="card-title">
+      <h4>Alternance developpement web</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+
+      <button onclick="showMore()" id="myBtn">Read more</button>
+    </div>
+  </div>
+</div>
+<div class="col-6">
+  <div class="card m-5 p-5">
+    <div class="card-title">
+      <h4>Alternance Full Stack Symfony</h4>
+    </div>
+  </div>
+
+</div>
+</div>
+  </section>
+
+  <!-- carousel -->
+<section class="projects" id="projects">
+<div class="row my-5 align-items-center justify-content-center">
+  <div class="col-2">
+    <button onclick="showBefore()" id="btnBefore"class="bg-transparent border-0">
+      <img src="./assets/arrowleft.png" alt="" srcset="" style="max-width: 80px;">
+    </button>
+  </div>
+  <div class="col-8 d-block" id="projet1" >
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="./assets/caroussel1.PNG" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Card title projet1</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-8 d-none" id="projet2">
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="./assets/caroussel2.PNG" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Card title projet2</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-8 d-none" id="projet3">
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="./assets/caroussel3.PNG" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Card title projet3</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-2">
+    <button onclick="showAfter()" id="btnAfter" class="bg-transparent border-0">
+    <img src="./assets/arrowright.png" alt="" srcset="" style="max-width: 80px;">
+    </button>
+  </div>
+</div>
+</section>
 
   <!-- Skills section -->
 
@@ -101,201 +195,6 @@
   </section>
 
 
-
-  <!-- Projects section FRONT END-->
-
-
-  <section class="projects" id="projects">
-    <div class="projectheader">
-
-      <h2>Projets front-end</h2>
-    </div>
-
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
-
-      <!-- images with caption text -->
-      <div class="mySlides fade">
-
-        <img src="./assets/caroussel1.PNG" style="width:80%">
-        <div class="text">Projet CSS responsive</div>
-      </div>
-
-      <div class="mySlides fade">
-
-        <img src="./assets/caroussel2.PNG" style="width:80%">
-        <div class="text">Projet Javascript</div>
-      </div>
-
-      <div class="mySlides fade">
-        <img src="./assets/caroussel3.PNG" style="width:80%">
-        <div class="text">Projet Angular</div>
-      </div>
-
-
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
-
-  </section>
-  <section class="projectmobile">
-    <div>
-      <img src="./assets/caroussel1.PNG" alt="">
-    </div>
-    <div>
-      <img src="./assets/caroussel2.PNG" alt="">
-    </div>
-    <div>
-      <img src="./assets/caroussel3.PNG" alt="">
-    </div>
-  </section>
-
-
-  <!-- PROJETS BACK END PHP-->
-  <section class="projects_2" id="projects_2">
-    <div class="projectheader_2">
-
-      <h2>Projet back-end en PHP</h2>
-    </div>
-
-    <!-- Slideshow container -->
-    <div class="slideshow-container2">
-
-      <!-- images with caption text -->
-      <div class="mySlides2 fade2">
-
-        <img src="./assets/homemygod.png" style="width:80%">
-        <div class="text2">Projet en PHP</div>
-      </div>
-
-      <div class="mySlides2 fade2">
-
-        <img src="./assets/homemygod2.png" style="width:80%">
-        <div class="text2">Projet en PHP</div>
-      </div>
-
-      <div class="mySlides2 fade2">
-        <img src="./assets/homemygod4.png" style="width:80%">
-        <div class="text2">Projet en PHP</div>
-      </div>
-
-
-
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="dot2" onclick="currentSlide(1)"></span>
-        <span class="dot2" onclick="currentSlide(2)"></span>
-        <span class="dot2" onclick="currentSlide(3)"></span>
-      </div>
-
-  </section>
-  <section class="projectmobile2">
-    <div>
-      <img src="./assets/homemygod.png" alt="">
-    </div>
-    <div>
-      <img src="./assets/homemygod2.png" alt="">
-    </div>
-    <div>
-      <img src="./assets/homemygod4.png" alt="">
-    </div>
-  </section>
-
-  <!-- PROJET BACK END SYMFONY-->
-  <section class="projects_3" id="projects_3">
-    <div class="projectheader_3">
-
-      <h2>Projets back-end en Symfony</h2>
-    </div>
-
-    <!-- Slideshow container -->
-    <div class="slideshow-container3">
-
-      <!-- images with caption text -->
-      <div class="mySlides3 fade3">
-
-        <img src="./assets/lastchance.png" style="width:80%">
-        <div class="text3">Projet Symfony - Last Chance</div>
-      </div>
-
-      <div class="mySlides3 fade3">
-
-        <img src="./assets/lastchance2.png" style="width:80%">
-        <div class="text3">Projet Symfony - Last Chance</div>
-      </div>
-
-      <div class="mySlides3 fade3">
-        <img src="./assets/lastchance4.png" style="width:80%">
-        <div class="text3">Projet Symfony - Last Chance</div>
-      </div>
-
-      <div class="mySlides3 fade3">
-        <img src="./assets/lastchance5.png" style="width:80%">
-        <div class="text3">Projet Symfony - Last Chance</div>
-      </div>
-
-
-      <div class="mySlides3 fade3">
-        <img src="./assets/runup/Capture d’écran du 2022-02-14 15-47-54.png" style="width:80%">
-        <div class="text3">Projet Symfony - RunUp Asso</div>
-      </div>
-
-      <div class="mySlides3 fade3">
-        <img src="./assets/runup/Capture d’écran du 2022-02-14 15-46-55.png" style="width:80%">
-        <div class="text3">Projet Symfony - RunUp Asso</div>
-      </div>
-
-      <div class="mySlides3 fade3">
-        <img src="./assets/runup/Capture d’écran du 2022-02-14 15-47-38.png" style="width:80%">
-        <div class="text3">Projet Symfony - RunUp Asso</div>
-      </div>
-
-      <div class="mySlides3 fade3">
-        <img src="./assets/runup/Capture d’écran du 2022-02-14 15-46-37.png" style="width:80%">
-        <div class="text3">Projet Symfony - RunUp Asso</div>
-      </div>
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="dot3" onclick="currentSlide(1)"></span>
-        <span class="dot3" onclick="currentSlide(2)"></span>
-        <span class="dot3" onclick="currentSlide(3)"></span>
-      </div>
-
-  </section>
-  <section class="projectmobile3">
-    <div>
-      <img src="./assets/lastchance.png" alt="">
-    </div>
-    <div>
-      <img src="./assets/lastchance2.png" alt="">
-    </div>
-    <div>
-      <img src="./assets/lastchance4.png" alt="">
-    </div>
-    <div>
-      <img src="./assets/lastchance5.png" alt="">
-    </div>
-    <div>
-      <img src="./assets/runup/Capture d’écran du 2022-02-14 15-47-54.png" alt="">
-    </div>
-    <div>
-      <img src="./assets/runup/Capture d’écran du 2022-02-14 15-46-55.png" alt="">
-    </div>
-    <div>
-      <img src="./assets/runup/Capture d’écran du 2022-02-14 15-47-38.png" alt="">
-    </div>
-    <div>
-      <img src="./assets/runup/Capture d’écran du 2022-02-14 15-46-37.png" alt="">
-    </div>
-  </section>
-  <div class="link_github">
-    <h2>Tous mes projets sont sur
-      <a href="https://github.com/mnadea001" target="_blank" rel="noreferrer noopener">Github</a>
-    </h2>
-  </div>
   <!-- Contact section -->
 
   <section class="Contact" id="Contact">
@@ -325,7 +224,7 @@
   <!-- Footer section -->
 
   <footer>
-    <p class="copy">&copy; Copyright Oct. 2021 - Fév. 2022</p>
+    <p class="copy">&copy; Copyright Mars 2023</p>
     <p class="copy">
       Fait avec <span class="coeur">
         &#x2661;
@@ -334,9 +233,10 @@
 
   </footer>
 
-  <!-- Scroll to top -->
+
+<!-- Scroll to top -->
   <div class="scrollup">
-    <i class="scroll-up" id="scroll-up"><img src="./assets/icons8-upward-arrow.gif" class="socicon up-arrow"
+    <i class="scroll-up" id="scroll-up"><img src="./assets/uparrow_120588.svg" class="socicon up-arrow"
         alt="scroll-up" /></i>
   </div>
   <!-- Ion icons scripts -->

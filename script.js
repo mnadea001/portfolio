@@ -43,55 +43,6 @@ function fill(item, index) {
 
 elements.forEach(fill);
 
-// CODE FOR CAROUSEL - PROJET FRONT END
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1 }
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 4000); // Change image every 4 seconds
-}
-
-// CODE FOR CAROUSEL - PROJET BACK END PHP
-var slideIndex2 = 0;
-showSlides2();
-
-function showSlides2() {
-  var i;
-  var slides2 = document.getElementsByClassName("mySlides2");
-  for (i = 0; i < slides2.length; i++) {
-    slides2[i].style.display = "none";
-  }
-  slideIndex2++;
-  if (slideIndex2 > slides2.length) { slideIndex2 = 1 }
-  slides2[slideIndex2 - 1].style.display = "block";
-  setTimeout(showSlides2, 4000); // Change image every 4 seconds
-}
-
-// CODE FOR CAROUSEL - PROJET BACK END SYMFONY
-var slideIndex3 = 0;
-showSlides3();
-
-function showSlides3() {
-  var i;
-  var slides3 = document.getElementsByClassName("mySlides3");
-  for (i = 0; i < slides3.length; i++) {
-    slides3[i].style.display = "none";
-  }
-  slideIndex3++;
-  if (slideIndex3 > slides3.length) { slideIndex3 = 1 }
-  slides3[slideIndex3 - 1].style.display = "block";
-  setTimeout(showSlides3, 4000); // Change image every 4 seconds
-}
-
-
 
 // scroll to top functionality
 const scrollUp = document.querySelector("#scroll-up");
@@ -103,3 +54,84 @@ scrollUp.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+/* btn show more / show less */
+
+
+function showMore(){
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  
+};
+
+/* carousel cards */
+
+const btnBefore = document.getElementById("#btnBefore");
+const btnAfter = document.getElementById("#btnAfter");
+
+btnAfter.addEventListener("click", showAfter) ;
+function showAfter() {
+  const projet1 = document.querySelector("#projet1");
+const projet2 = document.querySelector("#projet2");
+const projet3 = document.querySelector("#projet3");
+if (projet1.classList.contains("d-block")){
+  projet1.classList.add("d-none");
+  projet1.classList.remove("d-block");
+  projet2.classList.remove("d-none");
+  projet2.classList.add("d-block");
+} 
+
+else if (projet2.classList.contains("d-block")){
+  projet2.classList.add("d-none");
+  projet2.classList.remove("d-block");
+  projet3.classList.remove("d-none");
+  projet3.classList.add("d-block");
+} 
+
+else if (projet3.classList.contains("d-block")){
+  projet3.classList.add("d-none");
+  projet3.classList.remove("d-block");
+  projet1.classList.remove("d-none");
+  projet1.classList.add("d-block");
+
+} 
+};
+
+btnBefore.addEventListener("click", showBefore) ;
+function showBefore() {
+  const projet1 = document.querySelector("#projet1");
+const projet2 = document.querySelector("#projet2");
+const projet3 = document.querySelector("#projet3");
+if (projet1.classList.contains("d-block")){
+  projet1.classList.add("d-none");
+  projet1.classList.remove("d-block");
+  projet3.classList.remove("d-none");
+  projet3.classList.add("d-block");
+} 
+
+else if (projet2.classList.contains("d-block")){
+  projet2.classList.add("d-none");
+  projet2.classList.remove("d-block");
+  projet1.classList.remove("d-none");
+  projet1.classList.add("d-block");
+} 
+
+else if (projet3.classList.contains("d-block")){
+  projet3.classList.add("d-none");
+  projet3.classList.remove("d-block");
+  projet2.classList.remove("d-none");
+  projet2.classList.add("d-block");
+
+} 
+};
