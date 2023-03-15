@@ -39,7 +39,6 @@
       <li><a href="#about" class="nav-link">A propos</a></li>
       <li><a href="#skills" class="nav-link">Compétences</a></li>
       <li><a href="#works" class="nav-link">Expériences</a></li>
-      <li><a href="#projects" class="nav-link">Projets</a></li>
       <li><a href="#Contact" class="nav-link">Contact</a></li>
     </ul>
     <button class="burger-menu" id="burger-menu">
@@ -83,14 +82,21 @@
 
 
   <section class="works bg-dark" id="works">
-    <h2 class="text-white text-center my-5">Experiences professionnelles</h2>
+    <h2 class="text-white text-center my-5 pt-5">Experiences professionnelles</h2>
 <div class="row ">
 <div class="col-6">
   <div class="card m-5 p-5">
     <div class="card-title">
       <h4>Alternance developpement web</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-
+      <p>Au sein de l'agence de communication et évènementielle THE KUB
+      <span id="dots">...</span><span id="more">
+        <br>
+      - Intégration de maquettes de cartes de visite et newsletter 
+      <br>
+      - Développement de sites WordPress from scratch (création des thèmes)
+      <br>
+      - Maintenance de sites existants sur WordPress et Prestashop
+    </span></p>
       <button onclick="showMore()" id="myBtn">Read more</button>
     </div>
   </div>
@@ -99,6 +105,18 @@
   <div class="card m-5 p-5">
     <div class="card-title">
       <h4>Alternance Full Stack Symfony</h4>
+      <p>Au sein de la start-up Elemate : édition de logiciel Saas
+        <span id="dots2">...</span>
+        <span id="more2">
+          <br>
+          - Développement de nouvelles fonctionalités
+          <br>
+          - Code cleaning (refactorisation)
+          <br>
+          - Refonte des écrans 
+        </span></p>
+
+      <button onclick="showMore2()" id="myBtn2">Read more</button>
     </div>
   </div>
 
@@ -106,69 +124,7 @@
 </div>
   </section>
 
-  <!-- carousel -->
-<section class="projects" id="projects">
-<div class="row my-5 align-items-center justify-content-center">
-  <div class="col-2">
-    <button onclick="showBefore()" id="btnBefore"class="bg-transparent border-0">
-      <img src="./assets/arrowleft.png" alt="" srcset="" style="max-width: 80px;">
-    </button>
-  </div>
-  <div class="col-8 d-block" id="projet1" >
-    <div class="card mb-3" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="./assets/caroussel1.PNG" class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title projet1</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-8 d-none" id="projet2">
-    <div class="card mb-3" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="./assets/caroussel2.PNG" class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title projet2</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-8 d-none" id="projet3">
-    <div class="card mb-3" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="./assets/caroussel3.PNG" class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title projet3</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-2">
-    <button onclick="showAfter()" id="btnAfter" class="bg-transparent border-0">
-    <img src="./assets/arrowright.png" alt="" srcset="" style="max-width: 80px;">
-    </button>
-  </div>
-</div>
-</section>
+
 
   <!-- Skills section -->
 
@@ -179,18 +135,26 @@
     <div class="skills-wrapper">
       <div class="skillsline1">
 
-        <img src="./assets/HTML5_logo_and_wordmark.svg" alt="" class="icon icon-card" />
+
         <img src="./assets/CSS3_logo_and_wordmark.svg" alt="" class="icon icon-card" />
         <img src="./assets/800px-Unofficial_JavaScript_logo_2.svg.png" alt="" class="icon icon-card" />
+        <img src="./assets/typescript.png" alt="" class="icon icon-card" />
       </div>
 
       <div class="skillsline2">
 
         <img src="./assets/Angular_full_color_logo.svg" alt="" class="icon icon-card" />
         <img src="./assets/PHP-logo.svg" alt="" class="icon icon-card" />
-        <img src="./assets/d4af4c3163d48f3ed98a95302a49ca4d.png" alt="" class="icon icon-card" />
+        <img src="./assets/kotlin.png" alt="" class="icon icon-card" />
       </div>
     </div>
+    <div class="skillsline3">
+
+      <img src="./assets/symfony.png" alt="" class="icon icon-card" />
+      <img src="./assets/logojava.png" alt="" class="icon icon-card" />
+      <img src="./assets/logospring.png" alt="" class="icon icon-card" />
+    </div>
+  </div>
     </div>
   </section>
 
@@ -198,7 +162,7 @@
   <!-- Contact section -->
 
   <section class="Contact" id="Contact">
-    <h2>Contact</h2>
+    <h2 class="mb-5">Contact</h2>
     <div class="iconlist">
       <ul>
         <li>

@@ -75,63 +75,20 @@ function showMore(){
   
 };
 
-/* carousel cards */
+function showMore2(){
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
 
-const btnBefore = document.getElementById("#btnBefore");
-const btnAfter = document.getElementById("#btnAfter");
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
 
-btnAfter.addEventListener("click", showAfter) ;
-function showAfter() {
-  const projet1 = document.querySelector("#projet1");
-const projet2 = document.querySelector("#projet2");
-const projet3 = document.querySelector("#projet3");
-if (projet1.classList.contains("d-block")){
-  projet1.classList.add("d-none");
-  projet1.classList.remove("d-block");
-  projet2.classList.remove("d-none");
-  projet2.classList.add("d-block");
-} 
-
-else if (projet2.classList.contains("d-block")){
-  projet2.classList.add("d-none");
-  projet2.classList.remove("d-block");
-  projet3.classList.remove("d-none");
-  projet3.classList.add("d-block");
-} 
-
-else if (projet3.classList.contains("d-block")){
-  projet3.classList.add("d-none");
-  projet3.classList.remove("d-block");
-  projet1.classList.remove("d-none");
-  projet1.classList.add("d-block");
-
-} 
 };
 
-btnBefore.addEventListener("click", showBefore) ;
-function showBefore() {
-  const projet1 = document.querySelector("#projet1");
-const projet2 = document.querySelector("#projet2");
-const projet3 = document.querySelector("#projet3");
-if (projet1.classList.contains("d-block")){
-  projet1.classList.add("d-none");
-  projet1.classList.remove("d-block");
-  projet3.classList.remove("d-none");
-  projet3.classList.add("d-block");
-} 
-
-else if (projet2.classList.contains("d-block")){
-  projet2.classList.add("d-none");
-  projet2.classList.remove("d-block");
-  projet1.classList.remove("d-none");
-  projet1.classList.add("d-block");
-} 
-
-else if (projet3.classList.contains("d-block")){
-  projet3.classList.add("d-none");
-  projet3.classList.remove("d-block");
-  projet2.classList.remove("d-none");
-  projet2.classList.add("d-block");
-
-} 
-};
